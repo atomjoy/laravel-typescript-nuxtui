@@ -24,7 +24,7 @@ export default defineConfig({
 				// },
 			},
 		}),
-		ui(),
+		ui(), // Style nuxtui here
 	],
 	server: {
 		watch: {
