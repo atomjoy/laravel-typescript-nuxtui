@@ -1,4 +1,13 @@
-# Install Vue in Laravel
+# Laravel Vue NuxtUI with TypeScript
+
+```sh
+composer update
+npm install
+npm run build
+php artisan serve
+```
+
+## Dev
 
 ```sh
 # Vue
