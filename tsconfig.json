@@ -1,0 +1,22 @@
+{
+	// "extends": "@vue/tsconfig/tsconfig.json",
+	"include": ["resources/**/*.ts", "resources/**/*.d.ts", "resources/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
+	"compilerOptions": {
+		"target": "es2020",
+		"lib": ["ES2020", "DOM"],
+		"moduleResolution": "node",
+		"allowJs": true,
+		"strict": true,
+		"noImplicitAny": false,
+		// "skipLibCheck": true,
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["resources/js/*"]
+		},
+		// Vite-specific methods and accessors
+		"types": ["vite/client"],
+		// Required in Vue projects
+		"jsx": "preserve",
+		"jsxImportSource": "vue"
+	}
+}

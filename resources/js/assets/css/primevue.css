@@ -1,0 +1,180 @@
+:root {
+	/* --p-border-radius: 10px !important;
+	--p-border-radius-md: 10px !important;
+	--p-form-field-padding-y: 15px !important;
+	--p-form-field-padding-x: 20px !important;
+	--p-form-field-sm-padding-y: 10px !important;
+	--p-form-field-sm-padding-x: 15px !important;
+	--p-form-field-lg-padding-y: 20px !important;
+	--p-form-field-lg-padding-x: 30px !important; */
+	--p-inputgroup-addon-min-width: 3.3rem !important;
+
+	/* --p-inputtext-lg-padding-y: 15px !important;
+	--p-inputtext-lg-padding-x: 20px !important;
+	--p-form-field-lg-padding-y: 15px !important;
+	--p-form-field-lg-padding-x: 20px !important;
+	--p-inputtext-border-radius: 10px !important;
+	--p-inputgroup-addon-border-radius: 10px !important;
+	--p-editor-toolbar-border-radius: 10px !important;
+	--p-editor-content-border-radius: 10px !important; */
+	--p-multiselect-background: var(--input-bg) !important;
+	--p-overlay-select-background: var(--bg-1) !important;
+}
+
+.form-line {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+.p-form {
+	margin: 100px auto;
+	width: 100%;
+	max-width: 560px;
+	height: auto;
+	padding: 2rem;
+	overflow: hidden;
+	background: var(--bg-1) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.p-message-error {
+	float: left;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.p-checkbox-box {
+	background: var(--input-bg) !important;
+}
+
+.p-checkbox-input:checked + .p-checkbox-box {
+	background: var(--accent) !important;
+	border: 0px !important;
+}
+
+.p-checkbox-icon {
+	stroke: #fff !important;
+}
+
+.p-checkbox-input:hover + .p-checkbox-box {
+	border-color: var(--accent) !important;
+}
+
+.p-editor {
+	float: left !important;
+	width: 100% !important;
+}
+
+.ql-editor {
+	background: var(--input-bg) !important;
+}
+
+.p-editor-toolbar {
+	background: var(--input-bg) !important;
+}
+
+.p-inputgroupaddon {
+	background: var(--input-bg) !important;
+	border-color: var(--input-border) !important;
+}
+
+.p-inputtext {
+	box-sizing: border-box !important;
+	float: left !important;
+	width: 100% !important;
+	color: var(--text-1) !important;
+	background: var(--input-bg) !important;
+	font-size: var(--input-font-size) !important;
+	border-color: var(--input-border) !important;
+	box-shadow: none !important;
+	/* border: 1px solid var(--input-border) !important; */
+	/* padding: 15px 20px !important; */
+	/* line-height: 1.5 !important; */
+	/* border-radius: var(--border-radius) !important; */
+}
+
+.p-inputwrapper-filled {
+	float: left !important;
+	width: 100% !important;
+}
+
+.p-colorpicker {
+	box-sizing: border-box !important;
+	float: left !important;
+}
+
+.p-colorpicker-preview {
+	border: 1px solid var(--input-border) !important;
+}
+
+.p-colorpicker-panel {
+	background: var(--bg-3) !important;
+	border: 1px solid var(--bg-3) !important;
+}
+
+.p-icon {
+	color: var(--input-icon) !important;
+}
+
+.p-iconfield {
+	float: left;
+	width: 100%;
+	position: relative !important;
+}
+
+.p-inputicon {
+	top: 50% !important;
+}
+
+.p-datepicker {
+	position: relative !important;
+}
+
+.p-datepicker-input {
+	box-sizing: border-box !important;
+}
+
+.p-datepicker-dropdown {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	height: 100%;
+	padding: 15px !important;
+	border: 1px solid var(--input-border) !important;
+}
+
+.p-datepicker-dropdown svg {
+	color: var(--input-icon) !important;
+}
+
+.p-datepicker-dropdown-custom {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	padding: 15px !important;
+	margin: 3px !important;
+	background: var(--input-bg) !important;
+	border: 1px solid var(--input-border) !important;
+}
+
+.p-datepicker-panel {
+	background: var(--bg-2) !important;
+}
+
+.p-multiselect-filter {
+	padding: 10px !important;
+	font-size: 0.8rem;
+}
+.p-multiselect-list-container {
+	scrollbar-width: thin !important;
+}
+
+.p-inputtext:hover {
+	border-color: var(--accent) !important;
+}
+
+.p-inputtext:focus {
+	border: 1px solid var(--accent) !important;
+}

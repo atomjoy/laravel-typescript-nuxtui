@@ -1,0 +1,255 @@
+.font-small {
+	font-size: 14px;
+}
+
+.form-row {
+	display: flex;
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.alert-error {
+	float: left;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	color: var(--alert-error);
+	background: var(--alert-error-bg);
+	border-radius: var(--border-radius);
+}
+
+.alert-info {
+	float: left;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	color: var(--alert-info);
+	background: var(--alert-info-bg);
+	border-radius: var(--border-radius);
+}
+
+.auth-form {
+	margin: 100px auto;
+	width: 100%;
+	max-width: 560px;
+	border-radius: var(--border-radius);
+	overflow: hidden;
+}
+
+.form-wrapper {
+	float: left;
+	width: 100%;
+	padding: 32px;
+	overflow: hidden;
+	background: var(--bg-1);
+}
+
+.form-title {
+	float: left;
+	width: 100%;
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.form-text {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	color: var(--text-3);
+}
+
+.form-textarea {
+	float: left;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 150px;
+	max-height: 300px;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+	color: var(--text-1);
+	background: var(--input-bg);
+	border: 1px solid var(--input-border);
+	border-radius: var(--border-radius);
+	font-family: var(--font-family);
+	font-size: 1rem;
+}
+
+.form-input {
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	padding: 15px 20px;
+	line-height: 1.5;
+	margin-bottom: 0px;
+	color: var(--text-1);
+	background: var(--input-bg);
+	border: 1px solid var(--input-border);
+	border-radius: var(--border-radius);
+	font-size: var(--input-font-size);
+}
+
+.form-select {
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	padding: 15px 20px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+	color: var(--text-1);
+	background: var(--input-bg);
+	border: 1px solid var(--input-border);
+	border-radius: var(--border-radius);
+	font-size: var(--input-font-size);
+}
+
+.form-checkbox {
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
+.form-button {
+	float: left;
+	width: 100%;
+	padding: 15px 20px;
+	margin-top: 20px;
+	font-weight: 600;
+	color: #fff;
+	background: #000;
+	border: 0px solid var(--text-1);
+	border-radius: var(--border-radius);
+	cursor: pointer;
+}
+
+.form-input:focus {
+	border: 1px solid var(--accent);
+}
+
+.form-button:hover {
+	color: #fff;
+	background: var(--accent);
+}
+
+.form-button:disabled {
+	color: #fff;
+	background: #aaa;
+	cursor: default;
+}
+
+.form-label {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	color: var(--input-label);
+}
+
+.form-link-password {
+	text-align: right;
+	float: right;
+	width: auto;
+	margin-top: 3px;
+	margin-bottom: 0px;
+	font-weight: 500;
+	color: var(--text-1);
+}
+
+.form-link-account {
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+	font-weight: 500;
+	color: var(--text-2);
+}
+
+.form-link-docs {
+	display: inline;
+	margin-left: 5px;
+	font-weight: 500;
+	color: var(--text-1);
+}
+
+.yesno_wrapper {
+	float: left;
+	width: 100%;
+	padding: 0px;
+	margin-bottom: 20px;
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: var(--input-font-size);
+	font-family: var(--input-font-family);
+	background: var(--input-bg);
+	border-radius: var(--input-radius);
+	border: 1px solid var(--input-border);
+	transition: all 0.6s;
+	cursor: pointer;
+}
+
+.yesno_wrapper_yes {
+	padding: 15px 20px;
+	color: var(--accent);
+	font-weight: 500;
+}
+
+.yesno_wrapper_no {
+	padding: 15px 20px;
+	color: #f25;
+}
+
+/* Gifs donate */
+
+.form-selected-gif {
+	float: left;
+	width: 100%;
+	padding: 15px 20px;
+	margin-block: 20px;
+	color: var(--accent);
+	border: 1px solid var(--accent);
+	border-radius: var(--border-radius);
+}
+
+.form-gifs {
+	float: left;
+	width: 100%;
+	padding: 0px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.form-gif {
+	float: left;
+	width: 23%;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	border-radius: 20px;
+	border: 1px dashed var(--divider);
+}
+
+.form-gif:hover {
+	border-color: var(--accent);
+	cursor: pointer;
+}
+
+.form-gif img {
+	display: inline;
+	width: 60px;
+	height: 60px;
+}
+
+.form-color {
+	float: left;
+	margin-left: 20px;
+}

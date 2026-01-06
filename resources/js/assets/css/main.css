@@ -1,0 +1,95 @@
+/* App css here */
+
+@import url('@/assets/css/root.css');
+/* @import url('@/assets/css/primevue.css'); */
+
+:root {
+	--color0: #0267fb;
+	--color1: #364fc7;
+	--color2: #0caf61;
+	--color3: #18864b;
+	--color4: #ffd023;
+	--color5: #ffa323;
+	--color6: #ff5a30;
+	--color7: #ed1c24;
+	--color8: #d6336c;
+	--color10: #a5d0f1;
+	--color11: #cdeebf;
+	--color12: #f5b583;
+	--color13: #abd5e9;
+	--color14: #a6c0f1;
+	--color15: #a7aef0;
+	--color16: #4e7cff;
+	--color17: #7033ff;
+	--color18: #f65164;
+}
+
+a {
+	display: inline-block;
+	font-weight: 600;
+	color: var(--accent-hover);
+}
+
+a:hover {
+	color: var(--accent);
+}
+
+.panel-gradient {
+	background: #9dc8fd;
+	background: linear-gradient(90deg, rgba(157, 200, 253, 1) 0%, rgba(196, 239, 196, 1) 32%, rgba(232, 233, 175, 1) 62%, rgba(254, 147, 103, 1) 100%);
+}
+
+.panel-gradient-green {
+	background: #1e488f;
+	background: linear-gradient(90deg, #1e488f 0%, #13aa48 32%, #74c365 62%, #dbe64c 100%);
+}
+
+.panel-gradient-lime {
+	background: #13aa48;
+	background: linear-gradient(90deg, #13aa48 0%, #74c365 32%, #dbe64c 62%, #e3ef26 100%);
+}
+
+.panel-gradient-admin {
+	background: #ff0033;
+	background: linear-gradient(90deg, #ff0033 0%, #f58383 32%, #be83f5 62%, #83a3f5 95%);
+}
+
+.panel-gradient-vmware {
+	background: #6fbe2e;
+	background: linear-gradient(90deg, #6fbe2e 20%, #19ace1 40%, #0f61a9 60%, #5a39a0 80%);
+}
+
+.page-wrapper {
+	float: left;
+	width: 100%;
+	min-height: 100vh;
+	padding: 32px;
+	background: var(--bg-2);
+}
+
+.footer-wrapper {
+	float: left;
+	width: 100%;
+	padding: 32px;
+}
+
+.panel-wrapper {
+	float: left;
+	width: 100%;
+	min-height: 100vh;
+	padding: 32px;
+	background: var(--bg-2);
+}
+
+.panel-footer {
+	float: left;
+	width: 100%;
+	padding: 20px;
+	color: var(--text-3);
+}
+
+@media all and (max-width: 768px) {
+	.panel-wrapper {
+		padding: 20px;
+	}
+}

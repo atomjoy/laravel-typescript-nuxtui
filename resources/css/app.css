@@ -1,0 +1,71 @@
+@import 'tailwindcss' theme(static);
+@import '@nuxt/ui';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+	--font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Override NuxtUi */
+
+@theme static {
+	--font-sans: 'Poppins', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+
+	/* Override default green color */
+	--color-green: oklch(59.263% 0.2235 258.41);
+	--color-green-50: oklch(98.081% 0.00906 258.34);
+	--color-green-100: oklch(91.04% 0.04446 252.49);
+	--color-green-200: oklch(78.533% 0.11147 253.18);
+	--color-green-300: oklch(68.83% 0.16702 254.59);
+	--color-green-400: oklch(62.382% 0.20508 256.6);
+	--color-green-500: oklch(59.263% 0.2235 258.41);
+	--color-green-600: oklch(56.225% 0.21055 258.26);
+	--color-green-700: oklch(50.558% 0.18797 258.1);
+	--color-green-800: oklch(43.019% 0.15637 257.58);
+	--color-green-900: oklch(33.5% 0.11704 256.6);
+	--color-green-950: oklch(27.933% 0.09523 255.96);
+
+	/* Define new custom color */
+	--color-brand-50: #fef2f2;
+	--color-brand-100: #fee2e2;
+	--color-brand-200: #fecaca;
+	--color-brand-300: #fca5a5;
+	--color-brand-400: #f87171;
+	--color-brand-500: #ef4444;
+	--color-brand-600: #dc2626;
+	--color-brand-700: #b91c1c;
+	--color-brand-800: #991b1b;
+	--color-brand-900: #7f1d1d;
+	--color-brand-950: #450a0a;
+}
+
+:root {
+	--ui-text-muted: #707070;
+	--ui-text-dimmed: #707070;
+	--ui-bg: #fcfcfc;
+	--ui-bg-accented: #fafafa;
+	--ui-border: #e5e5e5;
+	--ui-border-accented: #e5e5e5;
+}
+
+.app-dark {
+	--ui-primary: var(--ui-color-primary-500);
+	--ui-text: #fff;
+	/* Label */
+	--ui-text-muted: #707070;
+	/* Icons */
+	--ui-text-dimmed: #707070;
+	/* Inputs */
+	--ui-text-highlighted: #fff;
+	--ui-bg: #262626;
+	--ui-bg-accented: #262626;
+	--ui-bg-elevated: #3f3f3f;
+	--ui-border: #2c2c2c;
+	--ui-border-accented: #2c2c2c;
+	--ui-radius: 10px;
+}
