@@ -48,3 +48,7 @@ https://laravel-news.com/typescript-laravel
 https://ui.nuxt.com/docs/getting-started/installation/vue
 https://vuejs.org/guide/typescript/overview
 ```
+
+## Image
+
+<img src="https://raw.githubusercontent.com/atomjoy/laravel-typescript-nuxtui/refs/heads/main/screenshot.png" width="100%">
