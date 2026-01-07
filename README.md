@@ -22,6 +22,14 @@ npm install pinia
 npm install @googlemaps/js-api-loader
 npm install @highlightjs/vue-plugin
 
+# Typescript
+npm install typescript --save-dev
+# Add typescript vue config
+npm add -D @vue/tsconfig
+# Vue type checkong
+npm add -D vue-tsc
+npx vue-tsc --noEmit
+
 # NuxtUi components
 npm install @nuxt/ui
 
@@ -32,18 +40,52 @@ npm install @primeuix/forms
 npm install primeicons
 npm install quill
 npm install zod
-
-# Typescript
-npm install typescript --save-dev
-npm add -D vue-tsc
-npx vue-tsc --noEmit
-
-# TS Config examples add with:
-# "extends": "@vue/tsconfig/tsconfig.json",
-npm add -D @vue/tsconfig
 ```
 
-## Links
+### Ts Vue config
+
+```json
+{
+    "extends": "@vue/tsconfig/tsconfig.dom.json",
+    "include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
+    "exclude": ["node_modules", "vendor"],
+    "compilerOptions": {
+        // Add console in ts
+        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+        "target": "ES2022",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+
+        // Import js files
+        "allowJs": true, // Allow import js files
+        "checkJs": true, // Check errors in js files
+
+        // Vite-specific methods and accessors: import.meta
+        "types": ["vite/client"],
+
+        // Required in Vue projects
+        "baseUrl": "./",
+
+        /* Aliases */
+        "paths": {
+            "@/*": ["./resources/js/*"],
+            "@assets/*": ["./resources/js/assets/*"],
+            "@components/*": ["./resources/js/components/*"]
+        },
+
+        /* Linting */
+        "strict": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+        "erasableSyntaxOnly": false
+    }
+}
+```
+
+### Links
 
 ```sh
 # Ts
@@ -51,7 +93,7 @@ https://www.typescriptlang.org/tsconfig
 https://advanced-inertia.com/blog/typescript
 https://laravel-news.com/typescript-laravel
 https://ui.nuxt.com/docs/getting-started/installation/vue
-https://vuejs.org/guide/typescript/overview
+https://pl.vuejs.org/guide/typescript/overview
 ```
 
 ## Image
