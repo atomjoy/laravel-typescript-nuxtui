@@ -1,22 +1,41 @@
 {
-	// "extends": "@vue/tsconfig/tsconfig.json",
 	"include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
+	"exclude": ["node_modules", "vendor"],
 	"compilerOptions": {
-		"target": "es2020",
-		"lib": ["ES2020", "DOM"],
-		"moduleResolution": "node",
-		"allowJs": true,
-		"strict": true,
-		"noImplicitAny": false,
-		// "skipLibCheck": true,
-		"baseUrl": "./",
-		"paths": {
-			"@/*": ["resources/js/*"]
-		},
-		// Vite-specific methods and accessors
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"target": "ES2022",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"moduleDetection": "force",
+		"resolveJsonModule": true,
+		"allowImportingTsExtensions": true,
+
+		// Import js files too
+		"allowJs": true, // Allow import js files
+		"checkJs": true, // Check errors in js files
+
+		// Vite-specific methods and accessors: import.meta
 		"types": ["vite/client"],
+
 		// Required in Vue projects
+		"baseUrl": "./",
 		"jsx": "preserve",
-		"jsxImportSource": "vue"
+		"jsxImportSource": "vue",
+		"noEmit": true,
+		"skipLibCheck": true,
+
+		/* Aliases */
+		"paths": {
+			"@/*": ["./resources/js/*"],
+			"@assets/*": ["./resources/js/assets/*"],
+			"@components/*": ["./resources/js/components/*"]
+		},
+
+		/* Linting */
+		"strict": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true
 	}
 }

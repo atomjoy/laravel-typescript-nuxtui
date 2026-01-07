@@ -35,14 +35,19 @@ npm install zod
 
 # Typescript
 npm install typescript --save-dev
-npm add -D @vue/tsconfig
 npm add -D vue-tsc
 npx vue-tsc --noEmit
+
+# TS Config examples add with:
+# "extends": "@vue/tsconfig/tsconfig.json",
+npm add -D @vue/tsconfig
 ```
 
 ## Links
 
 ```sh
+# Ts
+https://www.typescriptlang.org/tsconfig
 https://advanced-inertia.com/blog/typescript
 https://laravel-news.com/typescript-laravel
 https://ui.nuxt.com/docs/getting-started/installation/vue

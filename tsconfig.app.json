@@ -1,27 +1,32 @@
 {
-	// Vue TypeScript Laravel
+	// Vue TypeScript config from @vue/tsconfig
+	// "extends": "@vue/tsconfig/tsconfig.dom.json",
 	"include": ["resources/js/**/*.d.ts", "resources/js/**/*.ts", "resources/js/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
 	"exclude": ["node_modules", "vendor"],
 	"compilerOptions": {
-		"target": "ES2020",
-		"module": "ESNext", // ES2020
-		"lib": ["ES2020", "DOM", "DOM.Iterable"],
-		"skipLibCheck": true,
+		// Js console
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"target": "ES2022",
 
-		// Vite-specific methods and accessors: console, import.meta
+		// Vite-specific methods and accessors: import.meta
 		"types": ["vite/client"],
 
 		/* Bundler mode */
-		"moduleResolution": "node",
-		"jsxImportSource": "vue",
-		"jsx": "preserve",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"allowJs": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"allowJs": true, // Allow import js files
+		"checkJs": true, // Check errors in js files
 		"importHelpers": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
 		"experimentalDecorators": true,
 		"noEmit": true,
+		"skipLibCheck": false,
 		"noImplicitAny": false,
+
+		// Vue
+		"jsxImportSource": "vue",
+		"jsx": "preserve",
 
 		/* Linting */
 		"strict": true,
