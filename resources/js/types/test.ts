@@ -13,7 +13,7 @@ const firstItem = (items: number[]) => {
 };
 
 const getItem = <T>(items: T[], id: number): T => {
-	return items[id];
+	return <T>items[id];
 };
 
 let item1 = firstItem([1, 2, 3, 4, 5]);

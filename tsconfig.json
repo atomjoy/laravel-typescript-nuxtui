@@ -1,4 +1,5 @@
 {
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
 	"include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
 	"exclude": ["node_modules", "vendor"],
 	"compilerOptions": {
@@ -6,11 +7,8 @@
 		"target": "ES2022",
 		"module": "ESNext",
 		"moduleResolution": "bundler",
-		"moduleDetection": "force",
-		"resolveJsonModule": true,
-		"allowImportingTsExtensions": true,
 
-		// Import js files too
+		// Import js files
 		"allowJs": true, // Allow import js files
 		"checkJs": true, // Check errors in js files
 
@@ -19,10 +17,6 @@
 
 		// Required in Vue projects
 		"baseUrl": "./",
-		"jsx": "preserve",
-		"jsxImportSource": "vue",
-		"noEmit": true,
-		"skipLibCheck": true,
 
 		/* Aliases */
 		"paths": {

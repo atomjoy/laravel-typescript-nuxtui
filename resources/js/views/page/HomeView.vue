@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Menu from '@/components/page/Menu.vue';
 import Footer from '@/components/page/Footer.vue';
-import { type BreadcrumbItem, type User } from '@/types';
+import type { BreadcrumbItem, User } from '@/types';
 
 interface Payload {
 	name: string;
