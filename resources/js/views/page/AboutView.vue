@@ -1,5 +1,4 @@
 <script setup>
-import axios from 'axios';
 import Menu from '@/components/page/Menu.vue';
 import Footer from '@/components/page/Footer.vue';
 import { ref, shallowRef, useTemplateRef } from 'vue';
@@ -22,7 +21,7 @@ const progress = ref(3);
 		<p>{{ $t('Page content goes here.') }}</p>
 
 		<div class="form-wrapper">
-			<UFormField label="Color" help="Specify the color" required="true" class="text-base">
+			<UFormField label="Color" help="Specify the color" required class="text-base">
 				<UColorPicker v-model="color" size="xl" />
 			</UFormField>
 
