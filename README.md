@@ -4,6 +4,7 @@
 composer update
 npm install
 npm run build
+php artisan migrate --seed
 php artisan serve
 ```
 
