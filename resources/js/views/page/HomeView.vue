@@ -19,7 +19,7 @@ function getUser(): User {
 }
 
 const submit = (payload: Payload) => {
-	console.log(payload, breadcrumbs);
+	console.log(payload, breadcrumbs, getUser());
 };
 </script>
 
