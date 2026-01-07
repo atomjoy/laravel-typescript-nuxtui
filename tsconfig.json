@@ -1,6 +1,6 @@
 {
 	// "extends": "@vue/tsconfig/tsconfig.json",
-	"include": ["resources/**/*.ts", "resources/**/*.d.ts", "resources/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
+	"include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
 	"compilerOptions": {
 		"target": "es2020",
 		"lib": ["ES2020", "DOM"],

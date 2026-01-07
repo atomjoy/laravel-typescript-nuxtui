@@ -1,0 +1,39 @@
+{
+	// Vue TypeScript Laravel
+	"include": ["resources/js/**/*.d.ts", "resources/js/**/*.ts", "resources/js/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
+	"exclude": ["node_modules", "vendor"],
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "ESNext", // ES2020
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"skipLibCheck": true,
+
+		// Vite-specific methods and accessors: console, import.meta
+		"types": ["vite/client"],
+
+		/* Bundler mode */
+		"moduleResolution": "node",
+		"jsxImportSource": "vue",
+		"jsx": "preserve",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"allowJs": true,
+		"importHelpers": true,
+		"experimentalDecorators": true,
+		"noEmit": true,
+		"noImplicitAny": false,
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+
+		/* Aliases */
+		"paths": {
+			"@/*": ["./resources/js/*"],
+			"@assets/*": ["./resources/js/assets/*"],
+			"@components/*": ["./resources/js/components/*"]
+		}
+	}
+}
