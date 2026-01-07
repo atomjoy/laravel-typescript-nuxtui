@@ -42,7 +42,7 @@ npm install quill
 npm install zod
 ```
 
-### Ts Vue config
+### Typescript Vue config
 
 ```json
 {
@@ -86,10 +86,10 @@ npm install zod
 }
 ```
 
-### Get ts vue config from
+### Vue Typescript config
 
 ```sh
-# Select Vue without starter
+# Select Vue TypeScript (without starter)
 npm create vite@latest
 ```
 
