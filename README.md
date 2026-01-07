@@ -86,6 +86,13 @@ npm install zod
 }
 ```
 
+### Get ts vue config from
+
+```sh
+# Select Vue without starter
+npm create vite@latest
+```
+
 ### Links
 
 ```sh
