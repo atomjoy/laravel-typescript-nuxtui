@@ -4,10 +4,6 @@ import type { Task } from '@/types/example';
 const props = defineProps<{
 	tasks: Task[];
 }>();
-
-const emit = defineEmits<{
-	addTask: [newTask: string];
-}>();
 </script>
 
 <template>
