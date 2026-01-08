@@ -10,6 +10,10 @@ const data = shallowRef(new CalendarDate(2026, 1, 10));
 const slider = ref([25, 75]);
 const page = ref(5);
 const progress = ref(3);
+
+const emit = defineEmits<{
+	addTask: [newTask: string];
+}>();
 </script>
 
 <template>
