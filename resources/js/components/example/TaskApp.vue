@@ -32,14 +32,3 @@ function addTask(task: string) {
 		<TaskList :tasks="tasks" />
 	</div>
 </template>
-
-<style scoped>
-.form-wrapper {
-	float: left;
-	width: 100%;
-	margin-block: 20px;
-	background: var(--bg-1);
-	border-radius: 20px;
-	padding: 20px;
-}
-</style>

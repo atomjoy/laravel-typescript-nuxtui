@@ -68,12 +68,4 @@ const emit = defineEmits<{
 	width: 100%;
 	height: auto;
 }
-.form-wrapper {
-	float: left;
-	width: 100%;
-	margin-block: 20px;
-	background: var(--bg-1);
-	border-radius: 20px;
-	padding: 20px;
-}
 </style>

@@ -88,6 +88,15 @@ a:hover {
 	color: var(--text-3);
 }
 
+.form-wrapper {
+	float: left;
+	width: 100%;
+	margin-block: 20px;
+	background: var(--bg-1);
+	border-radius: 20px;
+	padding: 20px;
+}
+
 @media all and (max-width: 768px) {
 	.panel-wrapper {
 		padding: 20px;
