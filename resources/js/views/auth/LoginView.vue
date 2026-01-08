@@ -17,12 +17,12 @@ async function submit(e) {
 		let res = await axios.post('/web/api/login', form);
 		console.log(res);
 		// // Two factor
-		// if (res?.data?.redirect != null) {
-		// 	location.href = res?.data?.redirect;
-		// } else {
-		// 	auth.setMessage(res);
-		// 	location.href = '/panel';
-		// }
+		if (res?.data?.redirect != null) {
+			location.href = res?.data?.redirect;
+		} else {
+			auth.setMessage(res);
+			location.href = '/panel';
+		}
 	} catch (err) {
 		auth.setErrors(err);
 	}
