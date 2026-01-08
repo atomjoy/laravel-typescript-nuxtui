@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import axios from 'axios';
 import { useAuthStore } from '@/stores/auth.js';
 import Menu from '@/components/page/Menu.vue';
@@ -10,10 +10,10 @@ import ErrorMessage from '@/components/auth/ErrorMessage.vue';
 const auth = useAuthStore();
 auth.clear();
 
-async function submit(e) {
+async function submit(e: Event) {
 	auth.scrollTop();
 	try {
-		const form = new FormData(e.target);
+		const form = new FormData(e.target as HTMLFormElement);
 		let res = await axios.post('/web/api/login', form);
 		console.log(res);
 		// // Two factor
