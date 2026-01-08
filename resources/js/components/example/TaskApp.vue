@@ -2,6 +2,7 @@
 import type { Task } from '@/types/example';
 import { ref } from 'vue';
 import TaskForm from './TaskForm.vue';
+import TaskList from './TaskList.vue';
 
 const tasks = ref<Task[]>([
 	{
@@ -28,26 +29,11 @@ function addTask(task: string) {
 <template>
 	<div class="form-wrapper">
 		<TaskForm @add-task="addTask" />
-
-		<h3>There are {{ tasks.length }} tasks.</h3>
-		<ol class="list-decimal">
-			<li v-for="t in tasks">{{ t.title }} <span v-if="t.done">DONE!</span></li>
-		</ol>
+		<TaskList :tasks="tasks" />
 	</div>
 </template>
 
 <style scoped>
-h3 {
-	margin-top: 20px;
-}
-ol li {
-	margin-left: 20px;
-}
-ol li span {
-	margin-left: 20px;
-	color: #5c5;
-	font-weight: 900;
-}
 .form-wrapper {
 	float: left;
 	width: 100%;
