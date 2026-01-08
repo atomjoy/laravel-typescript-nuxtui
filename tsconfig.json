@@ -10,8 +10,8 @@
 		"moduleResolution": "bundler",
 
 		// Import js files
-		"allowJs": true, // Allow import js files
-		"checkJs": false, // Check errors in js files
+		"allowJs": true, // Allow import js, vue files
+		"checkJs": false, // Check errors in js, vue files
 
 		// Vite-specific methods and accessors: import.meta
 		"types": ["vite/client"],
