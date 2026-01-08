@@ -49,7 +49,8 @@ npm install zod
 {
     // Vue TypeScript config install @vue/tsconfig
     "extends": "@vue/tsconfig/tsconfig.dom.json",
-    "include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue", "resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
+    "include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue"],
+    "include": ["resources/js/app.ts", "auto-imports.d.ts", "components.d.ts"],
     "exclude": ["node_modules", "vendor"],
     "compilerOptions": {
         // Add console in ts
@@ -94,6 +95,25 @@ npm install zod
 npm create vite@latest
 ```
 
+### Vue typescript submit form event
+
+```ts
+async function submit(e: Event) {
+    try {
+        const form = new FormData(e.target as HTMLFormElement);
+        let res = await axios.post("/api/login", form);
+        // Two factor
+        if (res?.data?.redirect != null) {
+            location.href = res?.data?.redirect;
+        } else {
+            location.href = "/panel";
+        }
+    } catch (err) {
+        console.log(err);
+    }
+}
+```
+
 ### Links
 
 ```sh
@@ -107,4 +127,4 @@ https://pl.vuejs.org/guide/typescript/overview
 
 ## Image
 
-<img src="https://raw.githubusercontent.com/atomjoy/laravel-typescript-nuxtui/refs/heads/main/screenshot.png" width="100%">
+![NuxtUi screenshot](https://raw.githubusercontent.com/atomjoy/laravel-typescript-nuxtui/refs/heads/main/screenshot.png)
