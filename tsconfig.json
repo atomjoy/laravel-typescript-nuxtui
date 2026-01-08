@@ -10,7 +10,7 @@
 		"moduleResolution": "bundler",
 
 		// Import js files
-		"allowJs": false, // Allow import js files
+		"allowJs": true, // Allow import js files
 		"checkJs": false, // Check errors in js files
 
 		// Vite-specific methods and accessors: import.meta

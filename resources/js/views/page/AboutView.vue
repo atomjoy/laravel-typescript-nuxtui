@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Menu from '@/components/page/Menu.vue';
 import Footer from '@/components/page/Footer.vue';
 import { ref, shallowRef, useTemplateRef } from 'vue';
