@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ChangeTheme from '../utils/head/ChangeTheme.vue';
+import ChangeTheme from '@/components/utils/head/ChangeTheme.vue';
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import ChangeTheme from '../utils/head/ChangeTheme.vue';
 
 		<div class="card">
 			<h1>Login</h1>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur impedit amet quos expedita aspernatur? Cumque veritatis eveniet distinctio in animi sapiente, autem eos debitis quaerat natus molestiae ad expedita quos.</p>
+			<div class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur impedit amet quos expedita aspernatur? Cumque veritatis eveniet distinctio in animi sapiente, autem eos debitis quaerat natus molestiae ad expedita quos.</div>
 
 			<div class="card-info">
 				<h3>Info window</h3>
@@ -71,16 +71,16 @@ label {
 	width: 100%;
 	min-height: 100vh;
 	padding: 40px;
-	background: var(--bg-1);
-	color: var(--text-1);
+	background: var(--bg-2);
+	color: var(--text-2);
 }
 
 .card {
 	float: left;
 	width: 100%;
 	height: auto;
-	padding: 20px 40px;
-	background: var(--bg-2);
+	padding: 30px;
+	background: var(--bg-1);
 	color: var(--text-1);
 	border-radius: var(--border-radius);
 }
@@ -92,6 +92,14 @@ label {
 	margin-block: 20px;
 	border-radius: var(--border-radius);
 	background: var(--bg-3);
+	color: var(--text-2);
+}
+
+.card-text {
+	float: left;
+	width: 100%;
+	padding-block: 20px;
+	margin-block: 10px;
 	color: var(--text-3);
 }
 
