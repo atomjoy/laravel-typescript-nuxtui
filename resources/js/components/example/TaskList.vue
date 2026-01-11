@@ -4,6 +4,14 @@ import type { Task } from '@/types/example';
 const props = defineProps<{
 	tasks: Task[];
 }>();
+
+// Props defaults
+// interface Props {
+// 	msg?: string;
+// 	labels?: string[];
+// }
+// const { msg = 'hello', labels = ['one', 'two'] } = defineProps<Props>();
+//  const { foo = 'hello' } = defineProps<{ foo?: string }>()
 </script>
 
 <template>

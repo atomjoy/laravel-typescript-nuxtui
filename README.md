@@ -112,6 +112,18 @@ async function submit(e: Event) {
         console.log(err);
     }
 }
+
+// Props
+interface Props {
+    msg?: string;
+    labels?: string[];
+}
+const { foo = "hello" } = defineProps<{ foo?: string }>();
+const { msg = "hello", labels = ["one", "two"] } = defineProps<Props>();
+const props = withDefaults(defineProps<Props>(), {
+    msg: "hello",
+    labels: () => ["one", "two"],
+});
 ```
 
 ### Links
