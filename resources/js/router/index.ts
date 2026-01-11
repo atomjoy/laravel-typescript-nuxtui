@@ -47,9 +47,10 @@ router.beforeEach(async (to, from, next) => {
 	} else {
 		// ✅ If roles required
 		if (to.meta.hasRole) {
+			const roles: any = to.meta.hasRole;
 			// ✅ Check allowed roles
-			for (let i = 0; i < to.meta.hasRole.length; i++) {
-				const role = to.meta.hasRole[i];
+			for (let i = 0; i < roles.length; i++) {
+				const role = roles[i];
 				// ✅ Allow if has role
 				if (auth.hasRole(role)) {
 					// ✅ Continue
