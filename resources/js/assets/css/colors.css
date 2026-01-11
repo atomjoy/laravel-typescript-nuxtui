@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+
+:root {
+	--opacity0: 0;
+	--opacity04: 0.04;
+	--opacity08: 0.08;
+	--opacity12: 0.12;
+	--opacity16: 0.16;
+	--opacity32: 0.32;
+	--opacity48: 0.48;
+	--opacity56: 0.56;
+	--opacity64: 0.64;
+	--opacity72: 0.72;
+	--opacity80: 0.8;
+	--opacity100: 1;
+
+	--radius0: 0px;
+	--radius2: 2px;
+	--radius4: 4px;
+	--radius8: 8px;
+	--radius9: 9px;
+	--radius10: 10px;
+	--radius12: 12px;
+	--radius14: 14px;
+	--radius16: 16px;
+	--radius18: 18px;
+	--radius20: 20px;
+	--radius24: 24px;
+	--radius28: 28px;
+	--radius100: 100%;
+	--radius512: 512px;
+
+	--color-black: #000;
+	--color-white: #ffffff;
+
+	--color-neutral900: #171717;
+	--color-neutral800: #1e1e1e;
+	--color-neutral700: #292929;
+	--color-neutral600: #6e6e6e;
+	--color-neutral500: #949494;
+	--color-neutral400: #cccccc;
+	--color-neutral300: #dddddd;
+	--color-neutral200: #ebebeb;
+	--color-neutral100: #f2f2f2;
+	--color-neutral50: #f7f7f7;
+
+	--color-btn-50: #ffffff;
+	--color-btn-100: #f5f9ff;
+	--color-btn-200: #b8d8ff;
+	--color-btn-300: #7ab7ff;
+	--color-btn-400: #3d96ff;
+	--color-btn-500: #0075ff;
+	--color-btn-600: #0062d6;
+	--color-btn-700: #0050ad;
+	--color-btn-800: #003d85;
+	--color-btn-900: #002a5c;
+	--color-btn-950: #002147;
+
+	--color-brand1100: #f0f8ff;
+	--color-brand1200: #e6f5ff;
+	--color-brand1300: #c2e2ff;
+	--color-brand1400: #aed7fa;
+	--color-brand1700: #0082fa;
+	--color-brand1800: #0070cc;
+	--color-brand1900: #00407a;
+
+	--color-brand2100: #fff0f8;
+	--color-brand2200: #ffe1f1;
+	--color-brand2300: #ffcce7;
+	--color-brand2400: #f7b7da;
+	--color-brand2700: #be0064;
+	--color-brand2800: #b50067;
+	--color-brand2900: #7a0045;
+
+	--color-brand3100: #f4f0ff;
+	--color-brand3200: #ebe4fd;
+	--color-brand3300: #ded2fa;
+	--color-brand3400: #d2c1f9;
+	--color-brand3700: #8250fa;
+	--color-brand3800: #6930f0;
+	--color-brand3900: #3407a3;
+
+	--color-brand4100: #e6faff;
+	--color-brand4200: #d4f6ff;
+	--color-brand4300: #c2f4ff;
+	--color-brand4400: #a4ecfe;
+	--color-brand4700: #0fd2ff;
+	--color-brand4800: #0497cc;
+	--color-brand4900: #005066;
+
+	--color-brand5100: #fff0f6;
+	--color-brand5200: #ffebf3;
+	--color-brand5300: #fad2e2;
+	--color-brand5400: #ffc1da;
+	--color-brand5700: #fa0064;
+	--color-brand5800: #db0054;
+	--color-brand5900: #7a002b;
+
+	--color-brand6100: #f8f0ff;
+	--color-brand6200: #f4e6ff;
+	--color-brand6300: #e8d2fa;
+	--color-brand6400: #dfc1f7;
+	--color-brand6700: #c382fa;
+	--color-brand6800: #8e2de0;
+	--color-brand6900: #490f7a;
+
+	--color-success100: #eef7ed;
+	--color-success200: #e3f3e1;
+	--color-success300: #c7e0bc;
+	--color-success400: #b6d8ac;
+	--color-success700: #119e00;
+	--color-success800: #007d00;
+	--color-success900: #005200;
+
+	--color-info100: #f0f7ff;
+	--color-info200: #e1edfa;
+	--color-info300: #cee0f5;
+	--color-info400: #bcd5f1;
+	--color-info700: #0075f7;
+	--color-info800: #0061cc;
+	--color-info900: #004694;
+
+	--color-warning100: #fff6e0;
+	--color-warning200: #fcebc4;
+	--color-warning300: #fbe3ab;
+	--color-warning400: #f8da90;
+	--color-warning700: #e0a000;
+	--color-warning800: #946a00;
+	--color-warning900: #664400;
+
+	--color-danger100: #fff0f2;
+	--color-danger200: #ffe6e8;
+	--color-danger300: #f5d7db;
+	--color-danger400: #eec4ca;
+	--color-danger700: #b4031c;
+	--color-danger800: #a30319;
+	--color-danger900: #7a0010;
+
+	--color-link: #1c73e7;
+	--color-linkHover: #004fe1;
+	--color-linkActive: #003fcd;
+	--color-linkVisited: #6000b0;
+	--color-slider-1: #ee005e;
+	--color-slider-2: #990057;
+
+	--color-transparentWhite0: rgba(255, 255, 255, var(--opacity0, 0));
+	--color-transparentWhite48: rgba(255, 255, 255, var(--opacity48, 0.48));
+	--color-transparentWhite48Alt: rgba(255, 255, 255, var(--opacity48, 0.48));
+	--color-transparentWhite56: rgba(255, 255, 255, var(--opacity56, 0.56));
+	--color-transparentWhite64: rgba(255, 255, 255, var(--opacity64, 0.64));
+	--color-transparentWhite72: rgba(255, 255, 255, var(--opacity72, 0.72));
+	--color-transparentWhite80: rgba(255, 255, 255, var(--opacity80, 0.8));
+	--color-transparentWhite1: rgba(255, 255, 255, var(--opacity100, 1));
+
+	--color-transparentBlack04: rgba(0, 0, 0, var(--opacity04, 0.04));
+	--color-transparentBlack08: rgba(0, 0, 0, var(--opacity08, 0.08));
+	--color-transparentBlack12: rgba(0, 0, 0, var(--opacity12, 0.12));
+	--color-transparentBlack16: rgba(0, 0, 0, var(--opacity16, 0.16));
+	--color-transparentBlack32: rgba(0, 0, 0, var(--opacity32, 0.32));
+	--color-transparentBlack48: rgba(0, 0, 0, var(--opacity48, 0.48));
+	--color-transparentBlack56: rgba(0, 0, 0, var(--opacity56, 0.56));
+	--color-transparentBlack64: rgba(0, 0, 0, var(--opacity64, 0.64));
+	--color-transparentBlack72: rgba(0, 0, 0, var(--opacity72, 0.72));
+	--color-transparentBlack80: rgba(0, 0, 0, var(--opacity80, 0.8));
+
+	--color-arrow: rgba(0, 0, 0, var(--opacity08, 0.08));
+	--color-shadow: rgba(0, 0, 0, var(--opacity16, 0.16));
+
+	--bottom02: 0 2px 4px 0 rgba(0, 0, 0, var(--opacity08, 0.08)), 0 0 2px 1px rgba(0, 0, 0, var(--opacity08, 0.08));
+	--bottom04: 0 4px 8px 0 rgba(0, 0, 0, var(--opacity16, 0.16)), 0 0 2px 1px rgba(0, 0, 0, var(--opacity08, 0.08));
+	--bottom08: 0 8px 12px 0 rgba(0, 0, 0, var(--opacity12, 0.12)), 0 0 4px 2px rgba(0, 0, 0, var(--opacity12, 0.12));
+
+	--top02: 0 -2px 4px 0 rgba(0, 0, 0, var(--opacity08, 0.08)), 0 0 2px 1px rgba(0, 0, 0, var(--opacity08, 0.08));
+	--top04: 0 -4px 8px 0 rgba(0, 0, 0, var(--opacity16, 0.16)), 0 0 2px 1px rgba(0, 0, 0, var(--opacity08, 0.08));
+	--top08: 0 -8px 12px 0 rgba(0, 0, 0, var(--opacity12, 0.12)), 0 0 4px 2px rgba(0, 0, 0, var(--opacity12, 0.12));
+
+	--left02: -2px 0 4px 0 rgba(0, 0, 0, var(--opacity08, 0.08)), 0 0 2px 1px rgba(0, 0, 0, var(--opacity08, 0.08));
+	--left04: -4px 0 8px 0 rgba(0, 0, 0, var(--opacity16, 0.16)), 0 0 2px 1px rgba(0, 0, 0, var(--opacity08, 0.08));
+	--left08: -8px 0 12px 0 rgba(0, 0, 0, var(--opacity12, 0.12)), 0 0 4px 2px rgba(0, 0, 0, var(--opacity12, 0.12));
+
+	--right02: 2px 0 4px 0 rgba(0, 0, 0, var(--opacity08, 0.08)), 0 0 2px 1px rgba(0, 0, 0, var(--opacity08, 0.08));
+	--right04: 4px 0 8px 0 rgba(0, 0, 0, var(--opacity16, 0.16)), 0 0 2px 1px rgba(0, 0, 0, var(--opacity08, 0.08));
+	--right08: 8px 0 12px 0 rgba(0, 0, 0, var(--opacity12, 0.12)), 0 0 4px 2px rgba(0, 0, 0, var(--opacity12, 0.12));
+}
+
+:root {
+	/* page */
+	--font-size: 16px;
+	--border-radius: 10px;
+	--button-border-radius: 10px;
+	--scrollbar-width: 10px;
+	--gap: 20px;
+	--font-family: 'Poppins', Arial, Helvetica, sans-serif;
+	--font-family-code: 'JetBrains Mono', 'Fira Code', monospace;
+
+	/* alert error */
+	--alert-error: #fe093a;
+	--alert-error-bg: linear-gradient(to right, #fe093a15, #fe093a06);
+
+	/* alert ok */
+	--alert-info: #00b13f;
+	--alert-info-bg: linear-gradient(to right, #00b13f15, #00b13f06);
+
+	color-scheme: light;
+	--bg-1: var(--color-neutral50);
+	--bg-2: var(--color-white);
+	--bg-3: var(--color-neutral100);
+	--text-1: var(--color-black);
+	--text-2: var(--color-neutral900);
+	--text-3: var(--color-neutral800);
+	--icon-1: var(--color-neutral500);
+	--icon-2: var(--color-neutral400);
+	--icon-3: var(--color-neutral300);
+	--accent: var(--color-btn-500);
+	--accent-hover: var(--color-btn-700);
+	--label: var(--color-neutral700);
+	--border: var(--color-neutral400);
+	--divider: var(--color-neutral400);
+	--placeholder: var(--color-neutral400);
+	--logo: url('/default/logo/logo-dark.png');
+}
+
+/* color mode from <html color-scheme="dark"> */
+[color-scheme='dark'],
+.app-dark {
+	color-scheme: dark;
+	--bg-1: var(--color-neutral900);
+	--bg-2: var(--color-neutral800);
+	--bg-3: var(--color-neutral700);
+	--text-1: #fff;
+	--text-2: #5c5c5c;
+	--text-3: #929292;
+	--icon-1: var(--color-neutral300);
+	--icon-2: var(--color-neutral200);
+	--icon-3: var(--color-neutral100);
+	--accent: var(--color-btn-500);
+	--accent-hover: var(--color-btn-700);
+	--label: var(--color-neutral400);
+	--border: var(--color-neutral700);
+	--divider: var(--color-neutral400);
+	--placeholder: var(--color-neutral400);
+	--logo: url('/default/logo/logo-dark.png');
+}
